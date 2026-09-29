@@ -1,0 +1,64 @@
+{
+	"geode": "5.10.1",
+	"gd": {
+		"win": "2.2081",
+		"android": "2.2081",
+		"mac": "2.2081",
+		"ios": "2.2081"
+	},
+	"id": "clamscs.utility-tweaks",
+	"name": "Utility Tweaks",
+	"version": "v1.0.0",
+	"developer": "clamscs",
+	"description": "",
+	"dependencies": {
+		"geode.node-ids": ">=v1.23.3"
+	},
+	"settings": {
+	    "compact-numbers": {
+            "name": "Compact Numbers",
+            "description": "Shortens large numbers with suffixes.",
+            "type": "bool",
+            "default": false
+        },
+        "level-duration": {
+            "name": "Level Duration",
+            "description": "Show hours, minutes, and seconds below the level length label.",
+            "type": "bool",
+            "default": true
+        },
+        "dynamic-lengths": {
+            "name": "Dynamic Lengths",
+            "description": "Extend XL to XXL, XXXL, and beyond based on level length.",
+            "type": "bool",
+            "default": true
+        },
+        "golden-best": {
+            "name": "Golden Best",
+            "description": "Changes percentage font to gold and increases scale when beating your best run.",
+            "type": "bool",
+            "default": true
+        },
+        "decimal-percentage": {
+            "name": "Decimal Percentage",
+            "description": "Show customizable decimal places on the normal mode percentage label.",
+            "type": "bool",
+            "default": true
+        },
+        "decimal-places": {
+            "name": "Decimal Places",
+            "description": "Number of decimal places to display for percentage.",
+            "type": "int",
+            "default": 1,
+            "min": 0,
+            "max": 10,
+            "enable-if": "decimal-percentage"
+        },
+        "better-platformer-time": {
+            "name": "Better Platformer Time",
+            "description": "Auto-formats platformer timer to hours, minutes, and seconds.",
+            "type": "bool",
+            "default": true
+        }
+    }
+}
